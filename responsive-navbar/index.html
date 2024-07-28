@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'><link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" class="logo">Victoria Mitsu</a></li>
+        <li class="hideOnMobile"><a href="#home">Home</a></li>
+        <li class="hideOnMobile"><a href="#about">About</a></li>
+        <li class="hideOnMobile"><a href="#works">Works</a></li>
+        <li class="hideOnMobile"><a href="#progress">Progress</a></li>
+        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+        <li class="menu-button" onclick="toggleSidebar()">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <section class="section section--intro" id = "home">
+    <img class="hero__image" src="PIC.png" alt="" />
+  
+    <svg class="cross-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="5" x2="12" y2="19"></line>
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+    </svg>
+  
+    <svg class="cross-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="5" x2="12" y2="19"></line>
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+    </svg>
+  
+    <div class="ring ring--left"></div>
+    <div class="ring ring--right"></div>
+  
+    <h3 class="hero__title hero__title--1">HI, I'M VICTORIA</h3>
+    <h3 class="hero__title hero__title--2">Leadership-Oriented Student </h3>
+  
+  </section>
+  
+  <section class="section section--text" >
+    <div class="bio" style="width: 100%;">
+      <div>
+        <img src="mc.jpg" alt="biopic" class="biopic about">
+        <div class="box" id = "about">
+          Hi, I’m Victoria Mitsu, currently studying at SMA Sutomo 1 Medan. I've always been eager to try new things and learn from my mistakes. I joined an international organization called STEM IS US, where I now lead a team of professional educators. Together, we guide over 300 students from the basics of technology to advanced coding, inspiring those who lack experience and resources to become passionate about coding and create amazing projects. We've taught students from around the world, including China, the US, Canada, Pakistan, India, Turkey, Spain, and the Philippines.
+          <br><br>
+          I also collaborate with Project Ivy, a Singapore-based organization that partners with Malaysian and Indonesian tutors to teach English and math, expanding my experience and impact in education.
+          <br><br>
+          Not only am I active in international organizations, but I am also deeply involved in national and school organizations. My journey began with the student council in junior high school. I used to be shy and afraid to speak in front of others, but over time, I became more active and confident. Starting as a documentation chairman responsible for documenting the 17th of August event, I gradually moved on to public speaking events with professional coaches. Eventually, I was elected as the head of the student council (OSIS), a role that carries significant responsibility.
+          <br><br>
+          I continued to hone my organizational skills by joining groups such as Aspiring Change Makers and DAAI TV. With Aspiring Change Makers, I progressed from a committee member to an HRD officer, helping to provide donations and teach subjects like science, math, and language to underprivileged orphans. I also became the head of the Fed Today Feed Tomorrow program, where I led the initiative and managed finances, starting a business that generated around 1.4 million in profit, benefiting the participants with both money and valuable skills.
+          <br><br>
+          At DAAI TV, I had the opportunity to undergo rigorous training as a news caster, much like an apprentice. This hands-on experience allowed me to develop my broadcasting skills significantly, as I participated in various events and learned the intricacies of news casting from seasoned professionals.
+          <br><br>
+          Curious about my adventure? Scroll down and see my projects!
+    
+          <div class="line"></div>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+    
+  </section>
+  
+  <section class="section section--works">
+    <div class="cards">
+      <a href="pictVM.jpg" class="card card-1" data-cursor="hover"></a>
+      <a href="pictVM.jpg" class="card card-2" data-cursor="hover"></a>
+      <a href="pictVM.jpg" class="card card-3" data-cursor="hover"></a>
+    </div>
+  
+    <svg class="cross-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="5" x2="12" y2="19"></line>
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+    </svg>
+  </section>
+  
+  <!-- Progress -->
+  <section class="section section--progress" id = "works">
+    <ul class='slider' style="color: white;">
+      <li class='item' style="background-image: url('LionsClub.png')">
+        <div class='content'>
+          <h2 class='title'>"Lions International Club" (temporary)</h2>
+          <p class='description'> Managing registration data for providing care to over 80 patients with various health conditions, including cataract surgeries and treating chemical exposure-related ailments.
+          </p>
+          <a href="https://www.instagram.com/lionsclubs307a2/"><button >Explore More</button></a>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('daaitv.jpg')">
+        <div class='content'>
+          <h2 class='title'>"DAAI TV"</h2>
+          <p class='description'> DAAI TV, I had the opportunity to undergo rigorous training as a news caster, 
+            much like an apprentice. This hands-on experience allowed me to develop my broadcasting skills significantly, 
+            as I participated in various events and learned the intricacies of news casting from seasoned professionals.</p>
+            <a href="https://www.instagram.com/daaimagazine/"><button >Explore More</button></a>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('acm-s.JPG')">
+        <div class='content'>
+          <h2 class='title'>"Aspiring Change Makers"</h2>
+          <p class='description'>With Aspiring Change Makers, I progressed from a committee member to an HRD officer, 
+            helping to provide donations and teach subjects like science, math, and language to underprivileged orphans. 
+            I also became the head of the Fed Today Feed Tomorrow program, where I led the initiative and managed finances, 
+            starting a business that generated around 1.4 million in profit, benefiting the participants with both money and 
+            valuable skills. </p>
+            <a href="https://www.instagram.com/aspiringchangemakers/"><button >Explore More</button></a>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('stemIsUs.jpg')">
+        <div class='content'>
+          <h2 class='title'>"STEM IS US"</h2>
+          <p class='description'>
+            STEM IS US, where I now lead a team of professional educators. Together, we guide over 300 students from the basics 
+            of technology to advanced coding, inspiring those who lack experience and resources to become passionate about coding 
+            and create amazing projects. We've taught students from around the world, including China, US, Canada, Pakistan, India, 
+            Turkey, Spain, Philippine, and etc.
+          </p>
+          <a href="https://www.instagram.com/stem.is.us/"><button >Explore More</button></a>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('ProjectIvy.jpg')">
+        <div class='content'>
+          <h2 class='title'>"Project Ivy"</h2>
+          <p class='description'>
+            Project Ivy, a Singapore-based organization that partners with Malaysian and Indonesian tutors to teach English and math, 
+            expanding my experience and impact in education.
+          </p>
+          <a href="https://www.instagram.com/projectivy_/"><button >Explore More</button></a>
+        </div>
+      </li>
+      <li class='item' style="background-image: url('StudentCouncil.jpg')">
+        <div class='content'>
+          <h2 class='title'>"Student council"</h2>
+          <p class='description'> My journey began with the student council in junior high school. I used to be shy and afraid to speak 
+            in front of others, but over time, I became more active and confident. Starting as a documentation chairman responsible for 
+            documenting the 17th of August event, I gradually moved on to public speaking events with professional coaches. Eventually, 
+            I was elected as the head of the student council (OSIS), a role that carries significant responsibility. </p>
+            
+            <a href="https://www.instagram.com/osissmpsutomo1/"><button >Explore More</button></a>
+        </div>
+      </li>
+    </ul>
+    <nav class='nav'>
+      <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+      <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+    </nav>
+  </section>
+  <!-- Works -->
+  <section class="section--works" id = "progress">
+    <div id="slideshow-wrap">
+      <input type="radio" id="button-1" name="controls" checked="checked"/>
+    <label for="button-1"></label>
+    <input type="radio" id="button-2" name="controls"/>
+    <label for="button-2"></label>
+    <input type="radio" id="button-3" name="controls"/>
+    <label for="button-3"></label>
+    <input type="radio" id="button-4" name="controls"/>
+    <label for="button-4"></label>
+    <input type="radio" id="button-5" name="controls"/>
+    <label for="button-5"></label>
+    <input type="radio" id="button-6" name="controls"/>
+    <label for="button-6"></label>
+    <input type="radio" id="button-7" name="controls"/>
+    <label for="button-7"></label>
+    <input type="radio" id="button-8" name="controls"/>
+    <label for="button-8"></label>
+    <input type="radio" id="button-9" name="controls"/>
+    <label for="button-9"></label>
+    <input type="radio" id="button-10" name="controls"/>
+    <label for="button-10"></label>
+    
+    <label for="button-1" class="arrows" id="arrow-1">></label>
+    <label for="button-2" class="arrows" id="arrow-2">></label>
+    <label for="button-3" class="arrows" id="arrow-3">></label>
+    <label for="button-4" class="arrows" id="arrow-4">></label>
+    <label for="button-5" class="arrows" id="arrow-5">></label>
+    <label for="button-6" class="arrows" id="arrow-6">></label>
+    <label for="button-7" class="arrows" id="arrow-7">></label>
+    <label for="button-8" class="arrows" id="arrow-8">></label>
+    <label for="button-9" class="arrows" id="arrow-9">></label>
+    <label for="button-10" class="arrows" id="arrow-10">></label>
+      <div id="slideshow-inner">
+          <ul>
+              <li id="slide1">
+                  <img src="taiwanRobotic.jpg" />
+                  <div class="description">
+                      <input type="checkbox" id="show-description-1"/>
+                      <label for="show-description-1" class="show-description-label">I</label>
+                      <div class="description-text">
+                          <h2>Flower power</h2>
+                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                      </div>
+                  </div>
+              </li>
+              <li id="slide2">
+                  <img src="jakartaRobotic.jpg" />
+                  <div class="description">
+                      <input type="checkbox" id="show-description-2"/>
+                      <label for="show-description-2" class="show-description-label">I</label>
+                      <div class="description-text">
+                          <h2>Golden sunset</h2>
+                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                      </div>
+                  </div>
+              </li>
+              <li id="slide3">
+                  <img src="swcPublicSpeaking.jpg" />
+                  <div class="description">
+                      <input type="checkbox" id="show-description-3"/>
+                      <label for="show-description-3" class="show-description-label">I</label>
+                      <div class="description-text">
+                          <h2>Flower power again</h2>
+                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                      </div>
+                  </div>
+              </li>
+              <li id="slide4">
+                  <img src="greenmech.jpg" />
+                  <div class="description">
+                      <input type="checkbox" id="show-description-4"/>
+                      <label for="show-description-4" class="show-description-label">I</label>
+                      <div class="description-text">
+                          <h2>Stormy coast</h2>
+                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                      </div>
+                  </div>
+              </li>
+              <li id="slide5">
+                  <img src="newspaperRobotic.jpg" />
+                  <div class="description">
+                      <input type="checkbox" id="show-description-5"/>
+                      <label for="show-description-5" class="show-description-label">I</label>
+                      <div class="description-text">
+                          <h2>Splash!</h2>
+                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                      </div>
+                  </div>
+              </li>
+              <li id="slide6">
+                <img src="martialArts.jpg" />
+                <div class="description">
+                    <input type="checkbox" id="show-description-6"/>
+                    <label for="show-description-6" class="show-description-label">I</label>
+                    <div class="description-text">
+                        <h2>Splash!</h2>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                    </div>
+                </div>
+            </li>
+            <li id="slide7">
+              <img src="pictvm2.jpg" />
+              <div class="description">
+                  <input type="checkbox" id="show-description-7"/>
+                  <label for="show-description-7" class="show-description-label">I</label>
+                  <div class="description-text">
+                      <h2>Splash!</h2>
+                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                  </div>
+              </div>
+            </li>
+            <li id="slide8">
+              <img src="roboticSWEE.jpg" />
+              <div class="description">
+                  <input type="checkbox" id="show-description-7"/>
+                  <label for="show-description-7" class="show-description-label">I</label>
+                  <div class="description-text">
+                      <h2>Splash!</h2>
+                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                  </div>
+              </div>
+            </li>
+            <li id="slide9">
+              <img src="FeedProg.jpg" />
+              <div class="description">
+                  <input type="checkbox" id="show-description-7"/>
+                  <label for="show-description-7" class="show-description-label">I</label>
+                  <div class="description-text">
+                      <h2>Splash!</h2>
+                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                  </div>
+              </div>
+            </li>
+            <li id="slide10">
+              <img src="taekwondo.jpg" style="padding-bottom: 200px;">
+              <div class="description">
+                  <input type="checkbox" id="show-description-7"/>
+                  <label for="show-description-7" class="show-description-label">I</label>
+                  <div class="description-text">
+                      <h2>Splash!</h2>
+                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                  </div>
+              </div>
+            </li>
+
+          </ul>
+      </div>
+  </div>
+  </section>
+  <!-- footer -->
+  <!-- <section class="section--footer" id = "contact">
+    <footer id="footer" class = "footer">
+      <div class="col col1">
+        <h3>Get in Touch</h3>
+        <br>
+        <div style="margin: 0; margin-bottom : 10px; font-family: 'Barlow Semi Condensed', sans-serif;">
+          <h5>"Deciding isn't about being right</h5>
+          <h5> But doing right"</h5>
+        </div>
+        
+        <div class="social">
+          <a href="https://www.linkedin.com/in/victoriamitsu/" target="_blank" class="link"><img src="linkedinLogo.png" alt="" /></a>
+          <a href="https://www.instagram.com/victoriamitsu/" target="_blank" class="link"><img src="instagramLogo.png" alt="" /></a>
+          <a href="https://github.com/victoriamitsu" target="_blank" class="link"><img src="githubLogo.png" alt="" /></a>
+        </div>
+        <p style="color: #818181; font-size: smaller; margin-left: 0;">2024 © All Rights Reserved</p>
+      </div>
+      <div class="col col2">
+        <img src="gmail.jpg" alt="logogmail" class="logogmail">
+
+        <br>
+        <a href="mailto:victoria.mitsu@gmail.com" style="color: #818181; font-size: smaller; margin-top : 0; margin-left: 0;" >victoria.mitsu@gmail.com</a>
+        
+      </div>
+      <div class="col col3">
+        <img src="whatsapp.jpg" alt="logoWA" class="logogWA">
+      <a href="https://api.whatsapp.com/send?phone=08999899929">Send Message</a>
+      </div>
+      <div class="backdrop"></div>
+    </footer>
+    <div class="cursor"></div>
+  </section> -->
+  <section class="contact-section">
+    <div class="container">
+        <div class="contact-row">
+            <h1>Get in Touch</h1>
+            <p>"Deciding isn't about being right
+              <br>
+              But doing right."</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/victoriamitsu/"><img src="instagramLogo.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/victoria-mitsu-896341242/"><img src="linkedinLogo.png" alt="LinkedIn"></a>
+                <a href="https://github.com/victoriamitsu"><img src="githubLogo.png" alt="github"></a>
+            </div>
+            <div class="contact-info">
+                <div class="dribbble">
+                    <img src="whatsapp.jpg" alt="Dribbble">
+                    <a href="https://wa.me/08999899929">Send a Message</a>
+                </div>
+                <div class="email">
+                    <img src="gmail.jpg" alt="Email">
+                    <a href="mailto:contact@example.com">victoria.mitsu@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  <!-- partial -->
+  <script>
+    const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
